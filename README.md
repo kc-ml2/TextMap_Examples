@@ -11,7 +11,7 @@ The robot detects text signs (room names, directions, store fronts) with NavOCR,
 ### Landmark mapping (textmap)
 
 <p align="center">
-  <img src="TEXTMAP_GIF_URL" alt="textmap landmark SLAM" />
+  <img src="https://github.com/user-attachments/assets/0b329940-b951-4dd9-8c8c-e2880ae3fb7d" alt="textmap landmark SLAM" />
 </p>
 
 NavOCR detects text on the RGB frame. `textmap` lifts each detection into 3D using the depth image, associates it across frames on a spatial grid, and publishes the result as a persistent landmark map anchored to the SLAM pose graph.
