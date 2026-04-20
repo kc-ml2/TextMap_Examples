@@ -1,4 +1,4 @@
-# TextMap
+<img width="860" height="386" alt="demo" src="https://github.com/user-attachments/assets/f1cda33b-1703-46f5-95ca-f914bd836694" /># TextMap
 
 Text-driven indoor navigation with OCR-based landmark SLAM for ROS 2.
 
@@ -11,7 +11,7 @@ The robot detects text signs (room names, directions, store fronts) with NavOCR,
 ### Landmark mapping (textmap)
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4b2efade-f421-4705-906c-e9283a93f19f" width="1440" height="646" alt="textmap landmark SLAM" />
+  <img src="https://github.com/user-attachments/assets/b3156f7b-a9f4-4d24-8045-b2fbb6aa6327" width="1720" height="772" alt="textmap landmark SLAM" />
 </p>
 
 NavOCR detects text on the RGB frame. `textmap` lifts each detection into 3D using the depth image, associates it across frames on a spatial grid, and publishes the result as a persistent landmark map anchored to the SLAM pose graph.
