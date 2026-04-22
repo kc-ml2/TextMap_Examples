@@ -246,7 +246,7 @@ Copy or symlink the outputs from the mapping step into those directories, then l
 
 ```bash
 # Terminal 1 — Nav2 + RTAB-Map localization + text_nav_bridge
-ros2 launch text_nav_bridge text_nav.launch.py bag_name:=real_run
+ros2 launch text_nav_bridge text_nav_rtabmap.launch.py bag_name:=real_run
 
 # Terminal 2 — RealSense driver (same as mapping)
 ros2 launch realsense2_camera rs_launch.py \
@@ -269,7 +269,7 @@ If you have a recorded session, swap the camera driver for rosbag playback and k
 
 ```bash
 # Terminal 1 — same as above
-ros2 launch text_nav_bridge text_nav.launch.py bag_name:=real_run
+ros2 launch text_nav_bridge text_nav_rtabmap.launch.py bag_name:=real_run
 
 # Terminal 2 — rosbag replay
 ros2 bag play my_run --clock

@@ -89,3 +89,28 @@ max_angular_velocity: 0.3
 6. colcon build 빌드 검증
 7. 실제 런치 실행 + camera_info 수신 + landmark 생성 검증
 8. 세 패키지 README 업데이트
+
+## 후속: text_nav.launch.py 이름 변경 (append)
+
+### 동기
+`textmap` 패키지는 실제 로봇용 런치를 `textmap_rtabmap.launch.py`, 시뮬용을
+`textmap_sim.launch.py`로 백엔드를 이름에 드러내는 방식으로 쓰는데,
+`text_nav_bridge`는 실제 로봇용이 `text_nav.launch.py`로 백엔드 표기가
+빠져 있어 대칭이 깨져 있었음. 시뮬용 `text_nav_sim.launch.py`와 짝을
+맞추기 위해 rtabmap 쪽도 이름에 백엔드를 드러내도록 통일.
+
+### 변경
+- `src/text_nav_bridge/launch/text_nav.launch.py` → `text_nav_rtabmap.launch.py`
+  (git mv)
+- 참조 업데이트:
+  - `src/text_nav_bridge/README.md`
+  - `src/text_nav_bridge/config/realsense_d455_tfs.yaml` (주석)
+  - `src/text_nav_bridge/launch/text_nav_sim.launch.py` (docstring)
+  - 워크스페이스 루트 `README.md`
+
+### 영향
+- 파일 이동만이라 빌드/동작 변화 없음
+- 최종 명명 규칙: `{package}_{backend}.launch.py`
+  - `textmap_rtabmap.launch.py` / `textmap_sim.launch.py`
+  - `text_nav_rtabmap.launch.py` / `text_nav_sim.launch.py`
+  - `simulation.launch.py` (text_nav_sim, 데이터 소스 성격이라 예외)
