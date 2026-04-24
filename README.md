@@ -115,11 +115,12 @@ source install/setup.bash
 ### 3. Initialize Simulation
 
 Gazebo simulation environment with text signs:
-<img width="2268" height="1198" alt="image" src="https://github.com/user-attachments/assets/9ab1bd75-2c4b-4c34-80cb-7d4c26f81aef" />
 
 ```bash
 ros2 launch text_nav_sim simulation.launch.py
 ```
+<img width="2268" height="1198" alt="image" src="https://github.com/user-attachments/assets/9ab1bd75-2c4b-4c34-80cb-7d4c26f81aef" />
+
 
 On the other terminal, run robot teleoperation:
 
@@ -129,12 +130,12 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 ### 4. SLAM & Text Landmark Mapping
 On the other terminal, launch Textmap:
-<img width="2062" height="1071" alt="image" src="https://github.com/user-attachments/assets/b2bf45fb-48db-40fb-a6b8-7d9a6014dea9" />
 
 ```bash
 ros2 launch textmap textmap_slamtoolbox.launch.py \
   landmark_save_path:=~/map/sim_run/landmarks.yaml
 ```
+<img width="2062" height="1071" alt="image" src="https://github.com/user-attachments/assets/b2bf45fb-48db-40fb-a6b8-7d9a6014dea9" />
 
 `NavOCR` detects text in the camera images, `slam_toolbox` builds the SLAM map, and `textmap` anchors the detected text as 3D landmarks.
 
@@ -160,13 +161,14 @@ You should now have:
 ### 5. Navigation
 
 Turn off text landmark mapping, and launch Nav2, amcl, and text_nav_bridge:
-<img width="1355" height="993" alt="image" src="https://github.com/user-attachments/assets/d9b4ff31-dfc1-4ebc-be97-4cbc471b3e57" />
+
 
 ```bash
 ros2 launch text_nav_bridge text_nav_sim.launch.py \
 landmark_file:=$HOME/map/sim_run/landmarks.yaml \
 map_yaml_file:=$HOME/map/sim_run/map.yaml
 ```
+<img width="1355" height="993" alt="image" src="https://github.com/user-attachments/assets/d9b4ff31-dfc1-4ebc-be97-4cbc471b3e57" />
 
 Send a text command — it will be matched against the landmarks and converted into a Nav2 goal:
 <img width="2372" height="1205" alt="image" src="https://github.com/user-attachments/assets/0e261af3-fa09-4e95-90ca-fa43a7c87278" />
