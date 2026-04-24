@@ -1,5 +1,3 @@
-<img width="1080" height="704" alt="textnavigation_mapping (online-video-cutter com) (1) (1)" src="https://github.com/user-attachments/assets/bbd0b279-1403-46d8-9b68-b14b00cf0c16" />
-![textnavigation_mapping__online-video-cutter com___1___1__360](https://github.com/user-attachments/assets/ee077fd4-7444-4bac-9b7f-03853c1c14f0)
 # TextMap Example
 
 TextMap is an open-source project for leveraging textual information across navigation pipeline, including SLAM, path planning, and goal commands, all on CPU.
@@ -40,7 +38,7 @@ This repository provides examples of how to use TextMap.
 Given a text command, `text_nav_bridge` finds the closest-matching landmark from the saved map, and sends it to Nav2 as a `NavigateToPose` action.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55a5d4d0-0b4b-486e-9050-efdd3e11c806" width="1080" height="704" alt="text-command navigation" />
+  <img src="https://github.com/user-attachments/assets/bbd0b279-1403-46d8-9b68-b14b00cf0c16" width="1080" height="704" alt="text-command navigation" />
 </p>
 
 ---
