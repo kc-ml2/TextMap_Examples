@@ -38,7 +38,7 @@ This repository provides examples of how to use TextMap.
 Given a text command, `text_nav_bridge` finds the closest-matching landmark from the saved map, and sends it to Nav2 as a `NavigateToPose` action.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bbd0b279-1403-46d8-9b68-b14b00cf0c16" width="1080" height="704" alt="text-command navigation" />
+  <img src="https://github.com/user-attachments/assets/e3a1c1ce-b994-445f-9d16-3463d06cc3b5" width="1080" height="704" alt="text-command navigation" />
 </p>
 
 ---
