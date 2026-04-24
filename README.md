@@ -1,3 +1,4 @@
+<img width="1080" height="704" alt="textnavigation_mapping (online-video-cutter com) (1) (1)" src="https://github.com/user-attachments/assets/bbd0b279-1403-46d8-9b68-b14b00cf0c16" />
 ![textnavigation_mapping__online-video-cutter com___1___1__360](https://github.com/user-attachments/assets/ee077fd4-7444-4bac-9b7f-03853c1c14f0)
 # TextMap Example
 
@@ -31,7 +32,7 @@ This repository provides examples of how to use TextMap.
 `NavOCR` detects text in RGB camera images. `TextMap` then lifts each detection into a 3D SLAM map.
 
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/b3156f7b-a9f4-4d24-8045-b2fbb6aa6327](https://github.com/user-attachments/assets/8e0ff73e-1efb-43e4-a0dd-7cfc786dd80a)" width="1080" height="704" alt="textmap landmark SLAM" />
+  <img src="https://github.com/user-attachments/assets/8e0ff73e-1efb-43e4-a0dd-7cfc786dd80a" width="1080" height="704" alt="textmap landmark SLAM" />
 </p>
 
 
